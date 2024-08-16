@@ -20,7 +20,7 @@ wire s1, c1, s2;
   
     C_XOR U1 (.OUT(s1), .A(ui_in[0]), .B(ui_in[1]));
     C_AND U2 (.OUT(c1), .A(ui_in[0]), .B(ui_in[1]));
-    C_XOR U3 (.OUT(SUMA), .A(s1), .B((ui_in[2])));
+    C_XOR U3 (.OUT(uo_out[0]), .A(s1), .B((ui_in[2])));
     C_AND U4 (.OUT(s2), .A(s1), .B((ui_in[2])));
     C_XOR U5 (.OUT((uo_out[1])), .A(s2), .B(c1));
   
